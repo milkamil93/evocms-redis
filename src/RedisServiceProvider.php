@@ -13,6 +13,8 @@ class RedisServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->publishes([dirname(__DIR__) . '/publish' => MODX_BASE_PATH]);
+        $this->publishes([
+            dirname(__DIR__) . '/publish' => MODX_BASE_PATH
+        ]);
     }
 }
