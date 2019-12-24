@@ -25,16 +25,8 @@
       ],
       "files": [
         {
-          "source": "providers/",
-          "destination": "core/custom/config/app/providers/"
-        },
-        {
-          "source": "config/",
-          "destination": "core/custom/config/database/"
-        },
-        {
-          "source": "cache/",
-          "destination": "core/custom/config/cache/"
+          "source": "assets/",
+          "destination": "core/custom/config/"
         }
       ]
     }
