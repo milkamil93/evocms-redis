@@ -22,7 +22,7 @@
     "laravel": {
       "providers": [
         "Illuminate\\Redis\\RedisServiceProvider",
-        "EvolutionCMS\\Redis\\RedisServiceProvider"
+        "EvolutionCMS\\Redis\\EvoRedisServiceProvider"
       ]
     }
   }

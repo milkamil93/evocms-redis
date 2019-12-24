@@ -2,7 +2,7 @@
 
 use EvolutionCMS\ServiceProvider;
 
-class RedisServiceProvider extends ServiceProvider
+class EvoRedisServiceProvider extends ServiceProvider
 {
     protected $namespace = 'redis';
 
