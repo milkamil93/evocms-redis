@@ -22,12 +22,6 @@
     "laravel": {
       "providers": [
         "EvolutionCMS\\Redis\\RedisServiceProvider"
-      ],
-      "files": [
-        {
-          "source": "assets/",
-          "destination": "core/custom/config/"
-        }
       ]
     }
   }
