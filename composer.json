@@ -21,6 +21,7 @@
   "extra": {
     "laravel": {
       "providers": [
+        "Illuminate\\Redis\\RedisServiceProvider",
         "EvolutionCMS\\Redis\\RedisServiceProvider"
       ]
     }
