@@ -1,0 +1,42 @@
+{
+  "name": "milkamil93/evocms-redis",
+  "description": "Redis and documentObject cacher for EvolutionCMS",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kamil Shamatov",
+      "email": "milkamil93@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/redis": "^6.8",
+    "predis/predis": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "EvolutionCMS\\Redis\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EvolutionCMS\\Redis\\RedisServiceProvider"
+      ],
+      "files": [
+        {
+          "source": "providers/",
+          "destination": "core/custom/config/app/providers/"
+        },
+        {
+          "source": "config/",
+          "destination": "core/custom/config/database/"
+        },
+        {
+          "source": "cache/",
+          "destination": "core/custom/config/cache/"
+        }
+      ]
+    }
+  }
+}
