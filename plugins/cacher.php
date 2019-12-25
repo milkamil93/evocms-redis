@@ -6,9 +6,8 @@ use Illuminate\Support\Facades\Cache;
 
 Event::listen('evolution.OnBeforeLoadDocumentObject', function($params) {
     $evo = EvolutionCMS();
-    $cache = $evo->getConfig('enable_cache') == 1;
     $key = 'documentObject' . $params['identifier'];
-    if ($cache) {
+    if ($evo->getConfig('enable_cache')) {
         $documentObject = Cache::get($key);
     } else {
         $documentObject = null;
@@ -38,7 +37,7 @@ Event::listen('evolution.OnBeforeLoadDocumentObject', function($params) {
             }
             $documentObject = array_merge($documentObject, $tmplvars);
         }
-        if ($cache) {
+        if ($evo->getConfig('enable_cache')) {
             Cache::forever($key, $documentObject);
         }
     }
